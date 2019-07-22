@@ -4,7 +4,7 @@
 #
 # Installs rbenv and ruby-build
 
-if [ "$(uname -s)" == "Darwin" ]
+if [ "$(uname -s)" = "Darwin" ]
 then
   if test ! $(which rbenv)
   then
