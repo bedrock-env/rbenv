@@ -1,7 +1,7 @@
 # rbenv
 
-rbenv is an extension for the [bedrock](https://github.com/bedrock-env/ack)
-project to install rbenv and provide rbenv settings in the bedrock environment.
+rbenv is an extension for the [Bedrock](https://github.com/bedrock-env/bedrock)
+project to install rbenv and provide rbenv settings in the Bedrock environment.
 
 ### Provides
 
