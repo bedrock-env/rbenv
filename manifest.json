@@ -26,6 +26,32 @@
           }
         ]
       }
+    },
+    "ubuntu": {
+      "apt": {
+        "install_steps": [
+          {
+            "binary": "apt-get",
+            "command": "install rbenv -y",
+            "runif": "test ! $(which rbenv)"
+          },
+          {
+            "binary": "apt-get",
+            "command": "install ruby-build -y",
+            "runif": "test ! $(which ruby-build)"
+          }
+        ],
+        "update_steps": [
+          {
+            "binary": "apt-get",
+            "command": "update rbenv"
+          },
+          {
+            "binary": "apt-get",
+            "command": "update ruby-build"
+          }
+        ]
+      }
     }
   }
 }
