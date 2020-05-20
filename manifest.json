@@ -14,16 +14,6 @@
             "command": "install ruby-build",
             "runif": "test ! $(which ruby-build)"
           }
-        ],
-        "update_steps": [
-          {
-            "binary": "brew",
-            "command": "update rbenv"
-          },
-          {
-            "binary": "brew",
-            "command": "update ruby-build"
-          }
         ]
       }
     },
@@ -39,16 +29,6 @@
             "binary": "apt-get",
             "command": "install ruby-build -y",
             "runif": "test ! $(which ruby-build)"
-          }
-        ],
-        "update_steps": [
-          {
-            "binary": "apt-get",
-            "command": "update rbenv"
-          },
-          {
-            "binary": "apt-get",
-            "command": "update ruby-build"
           }
         ]
       }
